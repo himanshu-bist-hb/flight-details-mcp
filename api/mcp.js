@@ -18,9 +18,8 @@ const commonProps = {
     type: "string",
     description: "Return date YYYY-MM-DD. Omit for a one-way search.",
   },
-  currency: { type: "string", description: "Currency code, default USD (e.g. INR)" },
   adults: { type: "integer", description: "Number of adult passengers, default 1" },
-  max_price: { type: "integer", description: "Only return flights at or below this price" },
+  max_price: { type: "integer", description: "Only return flights at or below this price (INR)" },
   stops: {
     type: "integer",
     description: "0 = any, 1 = nonstop only, 2 = 1 stop or fewer, 3 = 2 stops or fewer",

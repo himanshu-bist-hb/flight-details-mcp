@@ -42,7 +42,7 @@ async function searchFlights(args) {
     departure_id: String(args.departure_id).toUpperCase(),
     arrival_id: String(args.arrival_id).toUpperCase(),
     outbound_date: args.outbound_date,
-    currency: args.currency || "USD",
+    currency: "INR", // always INR
     hl: "en",
     adults: String(args.adults || 1),
     // 1 = round trip, 2 = one way
